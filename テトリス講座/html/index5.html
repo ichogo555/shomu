@@ -9,6 +9,9 @@
   <header>
 <h1>首都クイズ</h1>
 <div class="container">
+<h2 id="bbb"><div id="ccc">1</div></h2>
+<!-- </div>
+<div class="container"> -->
 <div class="m"><div id="q">Q</div><div id="flag"></div><div id="contry">国名</div><div id="capital">首都</div><div id="s">start</div></div></br>　
 
 <div class="ddd">
@@ -16,7 +19,7 @@
   <form action="" id="form1">
   <input type="text" class="textbox" id="textBox1" value="" style="text-align: center;">
   </form>
-  <input type="button" value="P" id="btn7" onclick="onButtonClick();"/>
+  <button type="button" class="counting" value="P" id="btn7" onclick="onButtonClick();">P</button>
 </div> 
 <div id="a">
   <div id="output"></div>
@@ -45,7 +48,7 @@
     <li>公用語　　　  　英語</li>
     <li>最大都市　　  　ロンドン</li>
     <li>女王　　　　  　エリザベス2世</li>
-    <li>首相　　　　  　ボリス・ジョンソン</li>
+    <li>首相　　　　  　ボリス・ジョンソン(保守党)</li>
     <li>人口(2018)  　 6634万5600人(22位)</li>
     <li>通貨　　　　  　UKポンド</li>
     <li>GDP(2012)    　 2兆4337億ドル(6位)</li>
@@ -58,7 +61,7 @@
   <ul>
     <li>公用語　　　　　日本語</li>
     <li>最大都市　　　　東京</li>
-    <li>内閣総理大臣　　安倍晋三</li>
+    <li>内閣総理大臣　　安倍晋三(自民党)</li>
     <li>人口(2019)　　　1億2631万人(11位)</li>
     <li>通貨　　　　　　円</li>
     <li>GDP(2019)　　　5兆1760億ドル(3位)</li>
@@ -135,8 +138,11 @@
     </tr>
   </table>
 </div>
-</div></div>
-<!-- <div id="flag"></div> -->
+<div id="au">
+  <canvas id="can4" width="300px" height="300px" style="border: blue solid 1px"></canvas>
+</div>
+</div>
+</div>
 <script src="../js/main5.js"></script>
   </header>
   </html>

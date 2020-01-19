@@ -15,7 +15,7 @@
     btn.textContent = '';
     btn.style = "display:none";
     capitala.style = "display:none";
-    ex.style="disipaly:none";
+    ex.style="display: none";
     can3.style ="display: none";
     can2.style ="display: none";
     abc.style="display: none";
@@ -23,7 +23,9 @@
     fra1.style="display: none";
     ko1.style="display : none";
     ja2.style="display: none";
-  
+    btn7.style="display: inline";
+    bbb.style ="display: block";
+    
     switch (n) {
       case 0:
         contry.textContent = 'イギリス';
@@ -148,23 +150,23 @@
  {
    var val =document.forms.form1.textBox1.value;
    var target = document.getElementById("output");
+   bbb.style ="display: none";
+   btn.style = "background: olive";
+   btn.textContent = "次へ";
+   btn7.style="display: none";
 
   if (val == capital.textContent && val == "ロンドン") {
    can2.style ="display: inline";
    target.innerHTML = "正解";
    target.style = "background: url(../img/ye.jpg)";
-   btn.style = "background: olive";
-   btn.textContent = "次へ";
-   ex.style ="color: black";
+   ex.style ="display: inline";
    abc.style ="display: inline";
   }
   else if (val == capital.textContent && val == "パリ") {
     can0.style ="display: inline";
     target.innerHTML = "正解";
     target.style = "background: url(../img/ye.jpg)";
-    btn.style = "background: olive";
-    btn.textContent = "次へ";
-    ex.style ="color: black";
+    ex.style ="display: inline";
     fra1.style ="display: inline";
    }
   else if (val == capital.textContent && val == "東京") {
@@ -173,24 +175,26 @@
     target.style = "background: url(../img/ye.jpg)";
     btn.style = "background: olive";
     btn.textContent = "次へ";
-    ex.style ="color: black";
+    ex.style ="display: inline";
     ja2.style ="display: inline";
+    btn7.style="display: none";
    }
   else if (val == capital.textContent && val == "ソウル") {
     target.innerHTML = "正解";
     target.style = "background: url(../img/ye.jpg)";
-    btn.style = "background: olive";
-    btn.textContent = "次へ";
-    ex.style ="color: black";
+    ex.style ="display: inline";
     ko1.style ="display: inline";
+   }
+  else if (val == capital.textContent && val == "キャンベラ") {
+    target.innerHTML = "正解";
+    target.style = "background: url(../img/ye.jpg)";
+    ex.style ="display: inline";
+    can4.style ="display: inline";
    }
   else if(val == capital.textContent){
    target.innerHTML = "正解";
    target.style = "background: url(../img/ye.jpg)";
-   btn.style = "background: olive";
-   btn.textContent = "次へ";
-   ex.style ="color: black";
-  //  can3.style = "display: inline";
+   ex.style ="display: inline";
  } 
  else if(val == "土田")　{
    can1.style = "visibility: visible";
@@ -201,7 +205,8 @@
    target.style = "background:pink";
    btn.style = "background: olive";
    btn.textContent = "次へ";
-   capitala.style = "color: black";
+   capitala.style = "display:inline";
+   btn7.style="display: none";
  }
 }
 }
@@ -215,6 +220,7 @@
     output.textContent = '';
     textBox1.value = '';
     s.style = 'display:none';
+    bbb.style = 'display: block'
     switch (n) {
       case 0:
         contry.textContent = 'イギリス';
@@ -223,7 +229,6 @@
         ex.textContent ='イングランド、ウェールズ、スコットランド、北アイルランドという歴史的経緯に基づく4つの国が、同君連合型の単一の主権国家を形成する独特の統治体制を採る。';
         flag.style = 'background:url(../img/flag/en.png)'
         flag.textContent = '';
-        can1.style = "visibility:hidden";
         break;
       case 1:
         contry.textContent = 'フランス';
@@ -233,15 +238,25 @@
         flag.style = 'background:url(../img/flag/fra.png)'
         flag.textContent = '';
         break;
-      case 2:
     }
   });
 }
-{
-  var canvas = document.getElementById("can1");
-  var ctx = canvas.getContext('2d'); 
+// {
+//   var canvas = document.getElementById("can1");
+//   var ctx = canvas.getContext('2d'); 
 
-  ctx.font="80px Arial bold";
-  ctx.fillStyle = 'blue';
-  ctx.fillText("かなこ",150,80);
-}
+//   ctx.font="80px Arial bold";
+//   ctx.fillStyle = 'blue';
+//   ctx.fillText("かなこ",150,80);
+// }
+_=0;
+      addEventListener('load', function(ev){
+      _ ; [].slice.apply(document.querySelectorAll('button.counting')).forEach(function(e){
+      _ , _ ; e.addEventListener('click', function(evt){
+      _ , _ , _ ; var a = parseInt(this.getAttribute('data-count'));
+      _ , _ , _ ; a = isNaN(a)? 1: a+1;
+      _ , _ , _ ; ccc.textContent = a+1;
+      _ , _ , _ ; this.setAttribute('data-count', a);
+      _ , _ ; }, false);
+      _ ; });
+      }, false);
