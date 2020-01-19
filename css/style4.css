@@ -1,4 +1,43 @@
-h1{
-  background-color: yellow;
-  background-size: 100%;
+*{
+  background: rgba(0, 255, 170, 0.884);
+  text-align: center;
+}
+header{
+  background: yellowgreen;
+}
+
+button{
+  width: 300px;
+  height: 50px;
+}
+.counting{
+  margin: 100px;
+  background: red;
+}
+body{
+  width: 80%;
+  height: 100%;
+  background: yellow;
+  margin-left: auto;
+  margin-right: auto;
+  background-size: cover;
+  /* text-align: center; */
+}
+textarea{
+  margin-top:100px;
+  width: 300px;
+  height:100px;
+  font-size:50px;
+  border: none;
+}
+#ar{
+  font-size: 50px;
+}
+#ai{
+  width: 600px;
+  height: 100px;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #88eeff;
 }
